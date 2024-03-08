@@ -10,7 +10,19 @@ body{
 
 .grid{
     display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-columns{
+    grid-template-columns: auto auto;
+}
+
+.grid-3-columns{
     grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive{
+    max-width:100%
 }
 
 header{
@@ -59,15 +71,46 @@ header a {
     display: inline-block;
 }
 
+main{
+    background-color: white;
+    padding: 50px;
+}
+
+main h2{
+    font-weight: 700;
+    font-size:16px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    color: black;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+main h3{
+    font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        color: black;
+        margin: 0;
+}
+
+main{
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: black;
+}
+
 footer{
     color: white;
     background-color: black;
-    padding: 100px 0;
 }
 
 section{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 footer h3{
@@ -80,7 +123,6 @@ footer p {
     font-weight: 400;
     font-size: 16px;
     opacity: 0.7;
-    margin-right: 20px;
     line-height: 24px;
 }
 
@@ -111,5 +153,12 @@ footer a {
     }
     header h3 {
         font-size: 12px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    section{
+        padding: 30px;
     }
 }
