@@ -171,11 +171,17 @@ section{
     max-width: 100%;
     margin: 0 auto;
     padding: 60px 50px;
+    text-align: center;
 }
 
 section.secondary{
     background: #f8f8f8;
     text-align: center;
+}
+
+section .photos {
+    text-align: center;
+    margin: 30px 0 0 0;
 }
 
 footer h3{
